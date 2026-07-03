@@ -17,11 +17,11 @@ function SearchBar({ onSearch }) {
         type="text"
         value={city}
         onChange={(e) => setCity(e.target.value)}
-        placeholder="Search for a city..."
+        placeholder="Rechercher une ville..."
         className="search-input"
       />
       <button type="submit" className="search-button">
-        Search
+        Rechercher
       </button>
     </form>
   );

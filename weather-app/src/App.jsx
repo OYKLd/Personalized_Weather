@@ -18,7 +18,7 @@ function App() {
       const data = await getWeatherByCity(city)
       setWeather(data)
     } catch (err) {
-      setError('City not found. Please try again.')
+      setError('Ville non trouvée. Veuillez réessayer.')
       setWeather(null)
     } finally {
       setLoading(false)
@@ -32,7 +32,7 @@ function App() {
   return (
     <div className="app">
       <div className="container">
-        <h1 className="app-title">Weather Dashboard</h1>
+        <h1 className="app-title">Tableau de bord météo</h1>
         <SearchBar onSearch={handleSearch} />
         
         {loading && <Loader />}

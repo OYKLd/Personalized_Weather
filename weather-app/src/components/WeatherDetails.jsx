@@ -6,7 +6,7 @@ function WeatherDetails({ weather }) {
       <div className="detail-card">
         <span className="detail-icon">💧</span>
         <div className="detail-info">
-          <p className="detail-label">Humidity</p>
+          <p className="detail-label">Humidité</p>
           <p className="detail-value">{weather.main.humidity}%</p>
         </div>
       </div>
@@ -14,7 +14,7 @@ function WeatherDetails({ weather }) {
       <div className="detail-card">
         <span className="detail-icon">💨</span>
         <div className="detail-info">
-          <p className="detail-label">Wind Speed</p>
+          <p className="detail-label">Vitesse du vent</p>
           <p className="detail-value">{weather.wind.speed} m/s</p>
         </div>
       </div>
@@ -22,7 +22,7 @@ function WeatherDetails({ weather }) {
       <div className="detail-card">
         <span className="detail-icon">🌡️</span>
         <div className="detail-info">
-          <p className="detail-label">Feels Like</p>
+          <p className="detail-label">Ressenti</p>
           <p className="detail-value">{Math.round(weather.main.feels_like)}°C</p>
         </div>
       </div>
